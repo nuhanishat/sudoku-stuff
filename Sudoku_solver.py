@@ -116,18 +116,8 @@ class Sudoku():
             self.unassigned.append(cell_dom)
 
         # print(self.unassigned)
-
-
-    # What is backtracking doing? 
-
-        # It checks if a cell is blank, keeps the previous structure. Count is the starting cell
-        # If blank:
-            # Find possible values that could go in the cell (domain)
-            # Update list of unassigned variables with the domain found (The idea is to reduce the search space)
-            # For each value in domain, start searching.....
-                # Do your usual backtracking stuff
     
-
+    # The backtracking function
     def backtracking(self, count):
         if not self.find_blanks(count):
             return True
